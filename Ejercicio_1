@@ -1,27 +1,6 @@
 <HTML>
-<cabeza>
-	<meta charset="UTF-8" >
-	<título>Titulotítulo>
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js">script>
-	<Guión>
-		$( 'documento'). listo(función() {
- función hora() {
-				$.ajax({
- tipo:  'GET',
- url:  'acesso.php',
- éxito: función ($hora ) {
-					$( '#horario'). html($hora );
-					setTimeout(hora(),1000);
-				}
-			});
-			}
-			setTimeout(hora(),1000);
-		});
-	</Guión>
+DIA='fecha +"%d/%m/%Y"' 
+HORA='fecha +"%H:%M"' 
 
-</cabeza>
-<cuerpo>
-	<div id="horario">div>
-	<h1>Bienvenido  {$usuario}h1>
-</cuerpo>
+echo  "Hoy es el $DIA y la hora real es $HORA!" 
 </HTML>
